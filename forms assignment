@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+
+  <form action="submit.php" method="post" enctype="multipart/form-data">
+
+    <!-- Text input -->
+    <p>
+      Full Name: <br>
+      <input type="text" name="fullname" placeholder="Enter your full name" required>
+    </p>
+
+    <!-- Email -->
+    <p>
+      Email Address: <br>
+      <input type="email" name="email" placeholder="Enter your email" required>
+    </p>
+
+    <!-- Password -->
+    <p>
+      Password: <br>
+      <input type="password" name="password" placeholder="Enter a password" required>
+    </p>
+
+    <!-- Number -->
+    <p>
+      Age: <br>
+      <input type="number" name="age" min="18" max="100">
+    </p>
+
+    <!-- Date -->
+    <p>
+      Date of Birth: <br>
+      <input type="date" name="dob">
+    </p>
+
+    <!-- Gender (radio buttons) -->
+    <p>
+      Gender: <br>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other
+    </p>
+
+    <!-- Hobbies (checkboxes) -->
+    <p>
+      Hobbies: <br>
+      <input type="checkbox" name="hobby" value="reading"> Reading
+      <input type="checkbox" name="hobby" value="sports"> Sports
+      <input type="checkbox" name="hobby" value="music"> Music
+      <input type="checkbox" name="hobby" value="travel"> Travel
+    </p>
+
+    <!-- Dropdown menu -->
+    <p>
+      Country: <br>
+      <select name="country">
+        <option value="">--Select your country--</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+        <option value="rwanda">Rwanda</option>
+      </select>
+    </p>
+
+    <!-- Range slider -->
+    <p>
+      Rate your coding skills (1-10): <br>
+      <input type="range" name="skills" min="1" max="10">
+    </p>
+
+    <!-- Color picker -->
+    <p>
+      Favorite Color: <br>
+      <input type="color" name="favcolor">
+    </p>
+
+    <!-- File upload -->
+    <p>
+      Upload Profile Picture: <br>
+      <input type="file" name="profilepic" accept="image/*">
+    </p>
+
+    <!-- Textarea -->
+    <p>
+      About Yourself: <br>
+      <textarea name="about" rows="5" cols="40" placeholder="Write something about yourself..."></textarea>
+    </p>
+
+    <!-- Submit & Reset buttons -->
+    <p>
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear Form">
+    </p>
+
+  </form>
+</body>
+</html>
